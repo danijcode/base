@@ -16,10 +16,14 @@ Projeto base utilizando Laravel 5.6 + Angular 6.0 com autenticação JWT.
 - instale globalmente o [Angular CLI](https://cli.angular.io/) com o comando `npm install -g @angular/cli@latest` (talvez precise rodar com sudo)
 - vá para a pasta *Client* e execute `npm i` para instalar as dependencias do projeto (talvez a rxjs quebre, entao sera necessario instalar essa dependencia separadamente, recomendo a versão 6.0.0 `npm install rxjs@6.0.0 --save`)
 - Altere o arquivo `/Client/src/environments/environment.ts` com a url do backend
-- Execute `ng serve` para subir o frontend. Navegue `http://localhost:4200/`.
-- Execute `ng build -prod` em `Client` para gerar os arquivos de procução que estarão na pasta `dist/`.
 
 ## Rodando Aplicação (Desenvolvimento)
-- vá para a pasta raiz do projeto e execute `npm start`
+- Execute `ng serve` dentro da pasta *Client* para subir o frontend. Navegue `http://localhost:4200/`.
+- Execute `php artisan serve` dentro da pasta *Server* para subir o backend.
+- Execute `npm start` na pasta raiz do projeto caso queira executar frontend e backend juntos.
+
+## Gerar Pacote de produção frontend.
+- Execute `ng build -prod` em *Client* para gerar os arquivos de procução que estarão na pasta `dist/`.
+
 
 ## License: [MIT](https://opensource.org/licenses/MIT)
