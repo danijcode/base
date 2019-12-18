@@ -1,0 +1,11 @@
+{
+    "name": "base",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+      "ng": "ng",
+      "start": "(cd Client && ng serve) & (cd Server && php artisan serve --port=8000)"
+    },
+    "private": false
+}
+  
